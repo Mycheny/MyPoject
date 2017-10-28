@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="test@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.4">
+    <root id="1"/>
+    <schema id="2" parent="1" name="estore"/>
+    <schema id="3" parent="1" name="information_schema"/>
+    <schema id="4" parent="1" name="music"/>
+    <schema id="5" parent="1" name="mybatis"/>
+    <schema id="6" parent="1" name="mydata"/>
+    <schema id="7" parent="1" name="mysql"/>
+    <schema id="8" parent="1" name="test">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="9" parent="1" name="wcy"/>
+    <table id="10" parent="8" name="user"/>
+    <column id="11" parent="10" name="id">
+      <Position>1</Position>
+      <DataType>INT(10)|4</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="12" parent="10" name="username">
+      <Position>2</Position>
+      <Comment>用户名称</Comment>
+      <DataType>VARCHAR(32)|12</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="13" parent="10" name="birthday">
+      <Position>3</Position>
+      <Comment>生日</Comment>
+      <DataType>DATE(10)|91</DataType>
+    </column>
+    <column id="14" parent="10" name="sex">
+      <Position>4</Position>
+      <Comment>性别</Comment>
+      <DataType>CHAR(1)|1</DataType>
+    </column>
+    <column id="15" parent="10" name="address">
+      <Position>5</Position>
+      <Comment>地址</Comment>
+      <DataType>VARCHAR(256)|12</DataType>
+    </column>
+    <key id="16" parent="10" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
